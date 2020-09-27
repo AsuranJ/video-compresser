@@ -15,6 +15,7 @@ class Config(object):
             should_prompt=True
         ).split()
     )
+    BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = get_config("DOWNLOAD_LOCATION", "/app/DOWNLOADS")
     # Telegram maximum file upload size
