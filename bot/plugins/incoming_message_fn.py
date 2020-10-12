@@ -15,7 +15,6 @@ import os, time, asyncio, json
 from bot.localisation import Localisation
 from bot import (
   DOWNLOAD_LOCATION, 
-  AUTH_USERS
 )
 from bot.helper_funcs.ffmpeg import (
   convert_video,
